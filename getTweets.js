@@ -28,7 +28,7 @@ async function getTweets(num){
 	let timeout = 0;
 	while (found < num){
 		try {
-			const result = await rettiwt.tweet.search({ fromUsers: ['alkalinedd'] }, 20, token)
+			const result = await rettiwt.tweet.search({ fromUsers: ['TeamInk95'] }, 20, token)
 			for (let i = 0; i < result.list.length && found < num; i++){
 				tweets.push(result.list[i])
 				found++
