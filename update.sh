@@ -7,7 +7,7 @@ declare -i VIEWS
 read -r LIKES VIEWS < <(node getTweets.js 20)
 echo "Read in $LIKES likes and $VIEWS views!"
 
-declare -i FOLLOWERS="0"#$(node getFollowers.js)
+declare -i FOLLOWERS="0"  # $(node getFollowers.js)
 echo "Read in $FOLLOWERS from profile!"
 
 declare -i OLD_LIKES=$(tail -n 1 likes.txt | xargs echo -n)
